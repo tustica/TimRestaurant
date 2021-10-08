@@ -69,8 +69,8 @@ export default {
 }
 </script>
 
-<style scoped>
-
+<style lang='scss' scoped>
+    $tablet: 768px;
     .header{
         width: 100%;
         height: 150px;
@@ -163,5 +163,17 @@ export default {
     #contact:hover{
         cursor: pointer;
         background-color: blue;
+    }
+    @media screen and (max-width:$tablet) {
+        .header, .fixed_header{
+            width: 100%;
+            height: 80px;
+        }
+        #milkfish{
+            width: 90px;
+        }
+        #sammy{
+            width: 300px;
+        }
     }
 </style>

@@ -68,7 +68,8 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang='scss' scoped>
+$tablet: 768px;
 .hello{
   display: flex;
   flex-direction: column;
@@ -125,5 +126,16 @@ a {
 }
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0;
+}
+@media screen and (max-width:$tablet) {
+  .sibling{
+    width: $tablet;
+    overflow: hidden;
+  }
+  #menu_button{
+    left: 100px;
+  }
+
+
 }
 </style>

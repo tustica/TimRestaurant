@@ -133,4 +133,9 @@ h1{
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0;
 }
+@media screen and (max-width:768px) {
+    .reservation{
+        left: -20px;
+    }
+}
 </style>

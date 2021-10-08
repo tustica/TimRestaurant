@@ -102,4 +102,13 @@ export default {
         height: 3px;
         background-color: #ff8914
     }
+    @media screen and (max-width: 768px) {
+        .hours{
+            margin: 0px 100px 0px 20px
+        }
+        .delivery{
+            width: 250px;
+            margin: 15px;
+        }
+    }
 </style>

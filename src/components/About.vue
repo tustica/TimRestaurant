@@ -15,7 +15,8 @@ export default {
 }
 
 </script>
-<style scoped>
+<style lang='scss' scoped>
+    $tablet: 768px;
     .container{
         display: flex;
         padding: 70px;
@@ -44,5 +45,22 @@ export default {
         width: 50%;
         float: right;
     }
-    
+    @media screen and (max-width:$tablet) {
+        .container{
+            display: block;
+            margin-left: 20px;
+            padding: 0px;
+        }
+        #midpic{
+            margin-right: 350px;
+            width: 250px;
+            height: 170px;
+        }
+        .about_text{
+            padding: 0px;
+            margin-right: 330px;
+            font-size: 18px;
+        }
+
+    }
 </style>

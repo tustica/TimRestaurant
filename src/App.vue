@@ -56,6 +56,7 @@ export default {
 }
 body, html {
   margin: 0px;
+  overflow-x: hidden;
 }
 
 .slide-fade-enter-active {
